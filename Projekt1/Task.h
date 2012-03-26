@@ -14,19 +14,28 @@ using namespace std;
 
 class Task {
 public:
-    Task();
+    Task(int id, string description, string date, string time, int priority, int severity);
     Task(const Task& orig);
     virtual ~Task();
     int getId();
     void setId(int id);
-    string getTitle();
-    void setTitle(string title);
+    string getDescription();
+    void setDescription(string description);
     string getDate();
     void setDate(string date);
+    string getTime();
+    void setTime(string time);
+    int getPriority();
+    void setPriority(int priority);
+    int getSeverity();
+    void setSeverity(int severity);
 private:
     int id;
-    string title;
+    string description;
     string date;
+    string time;
+    int priority;
+    int severity;
 };
 
 #endif	/* TASK_H */

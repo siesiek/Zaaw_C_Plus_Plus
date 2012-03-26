@@ -21,12 +21,18 @@ public:
     virtual ~TodoList();
     void addTask(Task* task);
     void removeTask(int id);
-    void editTask();
+    void editTask(int id, string date, string time, string description, int priority, int severity);
     void showList();
     void saveToFile(string filename);
     void loadFromFile(string filename);
+    void showTask(int id);
+    void incrementAutoId();
+    int getAutoincrement();
+    Task* getTask(int id);
 private:
     map<int, Task*> taskList;
+    string* explode(string line);
+    int autoincrement;
 };
 
 #endif	/* TODOLIST_H */

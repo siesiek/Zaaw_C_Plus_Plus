@@ -6,19 +6,40 @@
  */
 
 #include <cstdlib>
+#include <list>
 #include "TodoList.h"
+#include "ProgramMenu.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+
 using namespace std;
 
 /*
  * 
  */
 int main(int argc, char** argv) {
-    Task* task = new Task();
-    task->setId(1);
-    task->setTitle("Task 1");
     TodoList* list = new TodoList();
-    list->addTask(task);
-    list->showList();
+    ifstream passFile("pass.dat");
+    string password;
+    string myPassword;
+    passFile >> password;
+    cout << "Prosze podac haslo, aby sie zalogowac" << endl;
+    cin >> myPassword;
+    if(password == myPassword){
+        ProgramMenu* menu = new ProgramMenu(list);
+        menu->clear();
+        list->loadFromFile(ProgramMenu::filename);
+        list->showList();
+        menu->showMenu();
+        menu->getUserChoice();
+        delete menu;
+    }
+    else{
+        cout << "Haslo nie jest prawidlowe. Koniec programu.";
+    }
+    
+    delete list;
     return 0;
 }
 
