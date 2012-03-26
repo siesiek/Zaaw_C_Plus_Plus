@@ -1,5 +1,5 @@
 main:
-	g++ main.cpp Task.cpp TodoList.cpp -o program.x
+	g++ main.cpp Task.cpp TodoList.cpp ProgramMenu.cpp -o program.x
 	
 run:
-	./program.x	
+	./program.x
