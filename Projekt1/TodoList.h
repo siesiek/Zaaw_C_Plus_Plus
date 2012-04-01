@@ -29,6 +29,7 @@ public:
     void incrementAutoId();
     int getAutoincrement();
     Task* getTask(int id);
+    int getSize();
 private:
     map<int, Task*> taskList;
     string* explode(string line);

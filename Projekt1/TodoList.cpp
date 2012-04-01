@@ -122,3 +122,7 @@ string* TodoList::explode(string line){
 Task* TodoList::getTask(int id){
     return this->taskList.at(id);
 }
+
+int TodoList::getSize(){
+    return this->taskList.size();
+}
