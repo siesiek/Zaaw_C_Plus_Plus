@@ -1,0 +1,16 @@
+Projekt I
+
+Lista tasków. Program pozwala na proste zarządzanie taskami.
+
+Kompilacja:
+make
+
+Uruchamianie:
+make run
+
+Uruchamianie testów:
+make test1 - uruchomienie testów unitowych klasy Task
+
+make test2 - uruchomienie testów unitowych klasy TodoList
+
+Aby się zalogować, należy podać hasło: pass
