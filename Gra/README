@@ -1,0 +1,22 @@
+Gra a'la Angry Birds.
+Autor: Grzegorz Kolasa
+
+Opis:
+Gra polega na strzelaniu pociskiem z działa w stronę kołyszącego się kwadratu. Za każde trafienie przyznawany jest punkt. Jeśli pocisk odbije się od celu i ponownie w niego uderzy, również jest przyznawany punkt. Gracz ma do dyspozycji 20 strzałów. Po każdym trafiniu cel przenosi się w inne miejsce.
+
+Sterowanie:
+a lub strzałka w górę - podniesienie działa
+z lub strzałka w dół - obniżenie działa
+spacja - strzał
++ - zwiększenie siły działa
+- - zmniejszenie siły działa
+r - ponowne załadowanie działa (niszczy poprzedni pocisk)
+n - rozpoczęcie gry od nowa
+q - wyłączenie programu
+
+Kompilacja i uruchomienie:
+Aby skompilować grę należy mieć zainstalowaną bibliotekę GLUT.
+Kompilacja: make
+Uruchomienie: make run
+
+Gra nie działa w środowisku ANDROID.
